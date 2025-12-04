@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Produkte – Osttirol Pur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Produktübersicht von Osttirol Pur – regionale Spezialitäten, sortiert nach Kategorie, Marke und Vorlieben.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+		<a href="index.html" class="logo">
+   		 <img src="img/logo.png" class="logo-img" alt="Osttirol Pur Logo">
+
+  		  <div class="logo-text">
+		        <span class="logo-title">Osttirol Pur</span>
+		        <small class="logo-sub">Regionale Produkte</small>
+		    </div>
+		</a>
+
+        <nav class="main-nav">
+            <button class="nav-toggle" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="produkte.html" class="active">Produkte</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="https://marketplace.penworldwide.org/" target="_blank" class="btn-nav">Zum Online-Shop</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="products-page">
+    <section class="section section-tight">
+        <div class="container">
+            <header class="section-header" data-animate="fade-up">
+                <h1>Produktübersicht</h1>
+                <p>Hier findest du eine Übersicht über unsere geplanten Produktkategorien. Später kannst du die echten Produkte deiner Übungsfirma eintragen und direkt mit dem Online-Shop verknüpfen.</p>
+            </header>
+
+            <!-- Filter & Suche -->
+            <div class="filters" data-animate="fade-up">
+                <div class="filter-group">
+                    <label for="search">Suche</label>
+                    <div class="search-wrapper">
+                        <input type="text" id="search" placeholder="Nach Produkt, Marke oder Stichwort suchen …">
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label for="category">Kategorie</label>
+                    <select id="category">
+                        <option value="all">Alle Kategorien</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="brand">Marke</label>
+                    <select id="brand">
+                        <option value="all">Alle Marken</option>
+                    </select>
+                </div>
+                <div class="filter-group filter-tags">
+                    <span>Vorlieben</span>
+                    <div class="tag-list">
+                        <button class="tag-filter active" data-tag="all">Alle</button>
+                        <button class="tag-filter" data-tag="bio">Bio</button>
+                        <button class="tag-filter" data-tag="vegan">Vegan</button>
+                        <button class="tag-filter" data-tag="geschenk">Geschenkidee</button>
+                        <button class="tag-filter" data-tag="premium">Premium</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produktgrid -->
+            <div id="product-grid" class="product-grid" data-animate="fade-up">
+                <!-- Karten werden von script.js generiert -->
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Overlay / Modal -->
+<div id="product-modal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" aria-label="Schließen">&times;</button>
+        <div class="modal-image-wrapper">
+            <img id="modal-image" src="" alt="">
+        </div>
+        <div class="modal-body">
+            <h2 id="modal-title"></h2>
+            <p class="modal-meta">
+                <span id="modal-category"></span> • <span id="modal-brand"></span>
+            </p>
+            <p id="modal-description"></p>
+            <p class="modal-price" id="modal-price"></p>
+            <div class="modal-tags" id="modal-tags"></div>
+            <a id="modal-link" href="#" target="_blank" class="btn btn-primary">Zum Produkt im Online-Shop</a>
+        </div>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div>
+            <strong>Osttirol Pur – Übungsfirma</strong>
+            <p>Regionale Spezialitäten & Genuss aus Osttirol.</p>
+        </div>
+        <div class="footer-links">
+            <a href="kontakt.html">Kontakt</a>
+            <a href="kontakt.html#impressum">Impressum</a>
+            <a href="kontakt.html#datenschutz">Datenschutz</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <small>© <span id="year"></span> Osttirol Pur – Übungsfirma. Alle Angaben ohne Gewähr.</small>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

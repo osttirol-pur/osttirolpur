@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt – Osttirol Pur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakt zur Übungsfirma Osttirol Pur, Impressum und Datenschutz.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+		<a href="index.html" class="logo">
+   		 <img src="img/logo.png" class="logo-img" alt="Osttirol Pur Logo">
+
+  		  <div class="logo-text">
+		        <span class="logo-title">Osttirol Pur</span>
+		        <small class="logo-sub">Regionale Produkte</small>
+		    </div>
+		</a>
+
+        <nav class="main-nav">
+            <button class="nav-toggle" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="produkte.html">Produkte</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                <li><a href="https://marketplace.penworldwide.org/" target="_blank" class="btn-nav">Zum Online-Shop</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="section">
+        <div class="container grid-2">
+            <div data-animate="fade-right">
+                <h1>Kontakt</h1>
+                <p>Du erreichst unsere Übungsfirma über die Schule bzw. das Sekretariat. Die Kontaktdaten kannst du hier später mit den offiziellen Daten ergänzen.</p>
+
+                <div class="contact-box">
+                    <h2>Osttirol Pur – Übungsfirma</h2>
+                    <p><strong>Adresse:</strong><br>
+                        Bundeshandeslakademie Lienz<br>
+                        Weidengasse 1<br>
+                        9900 Lienz</p>
+
+                    <p><strong>E-Mail:</strong><br>
+                        <a href="mailto:info@osttirol-pur.at">info@osttirol-pur.at</a> (Platzhalter)</p>
+
+                    <p><strong>Telefon:</strong><br>
+                        +43(0) 509 028 36-771</p>
+                </div>
+            </div>
+            <div data-animate="fade-left">
+                <h2>Kontaktformular</h2>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Max Mustermann">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" placeholder="max.mustermann@example.com">
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Nachricht</label>
+                        <textarea id="message" rows="5" placeholder="Wie können wir helfen?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" disabled>Absenden (Demo)</button>
+                    <p class="form-hint">Das Formular dient als Demo-Element und ist in der Übungsfirma nicht aktiv.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="impressum" class="section section-alt">
+        <div class="container" data-animate="fade-up">
+            <h2>Impressum (Übungsfirma)</h2>
+            <p>Diese Website wird im Rahmen einer schulischen Übungsfirma betrieben. Es handelt sich um ein Lernprojekt, nicht um ein reales Unternehmen.</p>
+            <ul>
+                <li>Firma: Osttirol Pur – Übungsfirma</li>
+                <li>Sitz: Weidengasse 1, 9900 Lienz</li>
+                <li>Rechtsform: Übungsfirma einer Handelsakademie</li>
+                <li>UID: AT56 9900 0003 7003 0639</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="datenschutz" class="section">
+        <div class="container" data-animate="fade-up">
+            <h2>Datenschutz (Kurzinfo)</h2>
+            <p>Im Rahmen dieser Übungsfirma werden keine echten Bestellungen oder personenbezogenen Daten von Kund:innen verarbeitet. Alle dargestellten Inhalte dienen ausschließlich Schulungszwecken.</p>
+            <p>Wenn du diese Seite für einen echten Webauftritt nutzt, ergänze unbedingt eine vollständige, gesetzeskonforme Datenschutzerklärung.</p>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div>
+            <strong>Osttirol Pur – Übungsfirma</strong>
+            <p>Regionale Spezialitäten & Genuss aus Osttirol.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#impressum">Impressum</a>
+            <a href="#datenschutz">Datenschutz</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <small>© <span id="year"></span> Osttirol Pur – Übungsfirma. Alle Angaben ohne Gewähr.</small>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
